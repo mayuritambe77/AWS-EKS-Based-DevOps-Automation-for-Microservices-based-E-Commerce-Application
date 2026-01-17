@@ -1,37 +1,56 @@
-# Local .terraform directories
-.terraform/
+*~
+*.iml
+*.ipr
+*.iws
+*.pyc
+.nb-gradle
+.nb-gradle-properties
+.swp
+.DS_Store
+\#*\#
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
+docker-compose.override.yml
 
-# Crash log files
-crash.log
-crash.*.log
+# Eclipse
+.classpath
+.project
+.settings
 
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
-# to change depending on the environment.
-*.tfvars
-*.tfvars.json
+bin/
+obj/
+.vs/
+.vscode
+.gradle/
+.idea/
+build/
+node_modules/
+coverage
+.next/
+out/
+build
+next-env.d.ts
+vendor/
+composer.lock
+.venv
+.dockerhub.env
+.ghcr.env
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+src/frontend/cypress/videos
+src/frontend/cypress/screenshots
+src/shipping/target/
+test/tracetesting/tracetesting-vars.yaml
 
-# Ignore transient lock info files created by terraform apply
-.terraform.tfstate.lock.info
+# Ignore copied/generated protobuf files
+/src/accounting/src/protos/
+/src/cart/src/protos/
+/src/fraud-detection/src/main/proto
+/src/frontend/pb/
+/src/frontend/protos/
+/src/payment/demo.proto
+/src/shipping/proto/
+/src/currency/proto
 
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
+# Android
+*.apk
 
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
-
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
+!src/currency/build
